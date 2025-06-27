@@ -28,6 +28,24 @@
   .text{
     max-width: 400px;
   }
+  button {
+    z-index:10;
+    user-select: none;
+    -webkit-user-select: none;
+    border: none;
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: #feb701;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+
+  button:active {
+    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+    outline: 0;
+  }
 }
 
 
@@ -55,24 +73,7 @@
   background: #feb701;
 }
 
-button {
-  z-index:10;
-  user-select: none;
-  -webkit-user-select: none;
-  border: none;
-  width: 50px;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  background: #feb701;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-}
 
-button:active {
-  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
-  outline: 0;
-}
 
 img{
     user-drag: none;

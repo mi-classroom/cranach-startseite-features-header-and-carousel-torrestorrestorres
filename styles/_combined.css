@@ -8,3 +8,6 @@
 @import url("/styles/layouts.css");
 @import url("/styles/footer.css");
 @import url("/styles/carousell.css");
+
+/* ----- specific styles ----- */
+@import url("/styles/index.css");

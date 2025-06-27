@@ -1,0 +1,71 @@
+main {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    padding: 0;
+    section {
+        margin: var(--fluid-space-m);
+    }
+    p{
+        max-width: 60vw!important;
+        text-align:start;
+        
+    }
+    .hero{
+        background-image: url('/assets/images/cranach-opener.webp');
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+        
+        padding: 0;
+        width: 100vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    }
+    .masonry {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 1rem;
+
+        width: 90vw;
+        height: 100vh;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    #img1 { grid-area: 1 / 1 / 3 / 3; }
+    #img2 { grid-area: 1 / 3 / 3 / 5; }
+    #img3 { grid-area: 1 / 5 / 3 / 6; }
+    #img4 { grid-area: 1 / 6 / 4 / 7; }
+    #img5 { grid-area: 3 / 1 / 6 / 2; }
+    #img6 { grid-area: 3 / 2 / 6 / 4; }
+    #text { grid-area: 3 / 4 / 4 / 6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        h2{
+            margin: 0;
+        }
+    }
+    #img7 { grid-area: 4 / 4 / 6 / 7; }
+}
+
+

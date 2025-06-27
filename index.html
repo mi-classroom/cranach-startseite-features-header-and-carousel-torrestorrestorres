@@ -6,38 +6,36 @@
   <link rel="stylesheet" href="/styles/_combined.css">
   <title>Lucas Cranach</title>
   <script src="/assets/components/main-header.js"></script>
-    <script src="/assets/components/main-header-cn.js"></script>
+  <script src="/assets/components/carousell-comp.js"></script>
 </head>
 <body>
     <main-header></main-header>
-      <main-header-cn></main-header-cn>
 
     <main>
-      <div class="carousell">
-        <button onclick="shuffle('left')">
-          <div class="arrowleft"></div>
-        </button>
-        <div class="inner-carousell">
-          <div class="text">
-          <h2>Lucas Cranach</h2>          
-          <p>Lucas Cranach der Ältere verkörpert die Idee eines Mannes im Zeitalter der Renaissance, der neben seiner Tätigkeit als Maler, Grafiker und Buchdrucker auch als Politiker und Unternehmer tätig war.</p>
-        </div>
-        <div class="imgs">
-          <img src="assets/images/lucas-cranach-1.jpg">
-          <img src="assets/images/lucas-cranach-2.jpg">
-          <img src="assets/images/lucas-cranach-3.jpg">
-        </div>
-        
-        </div>
-      
-        <button onclick="shuffle('right')">
-          <div class="arrowright"></div>
-        </button>
-      </div>
-      <div class="pagination"></div>
+        <section class="hero">
+          <h1>Step into Cranach´s World</h1>
+        </section>
+
+        <p>Das Cranach Digital Archive (CDA) ist ein internationales Forschungsprojekt, das sich der Dokumentation und Erforschung der Werke von Lucas Cranach d. Ä. (1472–1553) und seiner Werkstatt widmet. Es bietet eine umfassende digitale Sammlung hochauflösender Bilder, wissenschaftlicher Analysen und historischer Dokumente zu seinen Gemälden. Ziel ist es, Kunsthistorikern, Restauratoren und der Öffentlichkeit einen zentralen Zugang zu detaillierten Informationen über Cranachs Werke zu ermöglichen und den Austausch wissenschaftlicher Erkenntnisse zu fördern. </p>
+
+        <section class="masonry">
+          <img id="img1" src="assets/images/masonry/img1.jpg" alt="">
+          <img id="img2" src="assets/images/masonry/img2.jpg" alt="">
+          <img id="img3" src="assets/images/masonry/img3.jpg" alt="">
+          <img id="img4" src="assets/images/masonry/img4.jpg" alt="">
+          <img id="img5" src="assets/images/masonry/img5.jpg" alt="">
+          <img id="img6" src="assets/images/masonry/img6.jpg" alt="">
+          <div id="text">
+            <h2>Gemälde, Archivalen und Literatur</h2>
+            <button>Entdecken</button>
+          </div>
+          <img id="img7" src="assets/images/masonry/img7.jpg" alt="">
+        </section>
+
+        <carousell-comp></carousell-comp>
     </main>
 
-    <!--script src="/scripts/carousell.js"></script-->
+    <script src="/scripts/carousell.js"></script>
     
 </body>
 </html>
