@@ -1,7 +1,7 @@
 class MainHeader extends HTMLElement {
-    connctedCallback() {
-        this.innerHTML = `
-            <header class="header">
+  connectedCallback() {
+    this.innerHTML = `
+      <header class="header">
 
             <a class="logo" href="../index.html">
                 <img src="../assets/images/cda-logo.svg" alt="Cranach Digital Archive Logo">
@@ -44,7 +44,7 @@ class MainHeader extends HTMLElement {
             </div>
 
         </header>
-        `;
-    }
+    `;
+  }
 }
 customElements.define('main-header', MainHeader);
