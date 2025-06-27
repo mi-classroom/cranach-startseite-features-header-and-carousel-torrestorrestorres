@@ -18,6 +18,16 @@
   gap: 5rem;
   justify-content: center;
   align-items: center;
+  .inner-carousell{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+  }
+  .text{
+    max-width: 400px;
+  }
 }
 
 
